@@ -1,0 +1,5 @@
+DNS setup
+-->Server Setup
+->Go to service>DNS>Enter name(ex:-www.controso.com)>Enter adress(same as IPV4)click add.
+-->PC setup
+->Go to deshtop>Cmd prompt>nslookup domain name(ex:-www.controso.com)

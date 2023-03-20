@@ -1,0 +1,6 @@
+ACL
+build topology
+Go to router en > config t> access list 1 deny host IP address> access list 1 permit any>int f0/0>ip access group 1 in>exit>exit
+
+To remove ACL
+Go to router en > config t>no access list 1 deny host IP address>no access list 1 permit any>exit>exit

@@ -1,0 +1,7 @@
+FTP setup
+-->Server setup
+->Service>FTP>on>Add username and password.
+-->Pc setup
+->Desktop>text editor>Write something and save(file.txt)>cmd prompt>ftp ip>enter username>enter password>
+  dir>put file.txt>dir>quit.
+-->Check server side FTP .

@@ -1,0 +1,5 @@
+HTTP Setup
+-->Sever Side
+->Service>HTTP(Check on)>index.html(edit)save.
+-->PC setup
+->Check through web(domain name)

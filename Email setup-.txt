@@ -1,0 +1,9 @@
+Email setup:-
+---server setup
+->Dns domain (as you like .com)
+->email section add domain name as mentioned in dns domain 
+->Add user and password.
+----PC setup----
+->Desktop->email->config as per need (incoming and outgoing is same as dns ip)
+->login information is same as given server user and password.
+->Follow the steps in other pc.

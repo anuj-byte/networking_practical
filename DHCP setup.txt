@@ -1,0 +1,7 @@
+DHCP setup
+-->Server setup
+->Go to desktop>IP config>static>set IPV4>set DNS server(same as IPV4).
+->Service>DHCP>Service on>DNS server(same as IPV4)>set startIP adress last 20>max user 30(save).(optional open DNS).
+-->PC side
+->Desktop>IP config click on DHCP and check if dns server is same as server dns IP (Auto)
+->Enter inside cmd prompt and type (ipconfig /all)>Enter q>(ipconfig /release)>(ipconfig /renew(to restart the server)).
