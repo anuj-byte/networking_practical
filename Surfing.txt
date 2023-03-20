@@ -1,5 +1,5 @@
 Surfing
-follow same as ACL config.
+follow same as ACL config. 
 topology
 Go to server and add the html page in index.html
 en
@@ -13,11 +13,19 @@ Than remove access of browsing using cmd in CLI(to deny access):-
 6->ip access-group 104 out
 to view the access list ->sh access list 103
 Again give access of browsing:-
-1->ip access-list extended SURFING.
-2->permit tcp 192.168.10.0 0.0.0.255 any eq 80
-3->permit tcp 192.168.10.0 0.0.0.255 any eq 443
-4->exit
-5->ip access-list extended BROWSING
-6->permit tcp any 192.168.10.0 0.0.0.255 any established.
-7->ip access-group SURFING in
-8->ip access-group BROWSING out.
+1->access-list 103 permit tcp 192.168.10.0 0.0.0.255 any eq 80
+2->access-list 103 permit tcp 192.168.10.0 0.0.0.255 any eq 443
+3->access-list 103 permit tcp any 192.168.10.0 0.0.0.255 established
+4->intf0/0
+5->ip access-group 103 in
+6->ip access-group 104 out
+ 
+7->ip access-list extended SURFING.
+8->permit tcp 192.168.10.0 0.0.0.255 any eq 80
+9->permit tcp 192.168.10.0 0.0.0.255 any eq 443
+10->exit
+11->ip access-list extended BROWSING
+12->permit tcp any 192.168.10.0 0.0.0.255 any established.
+13->int f0/0
+14->ip access-group SURFING in
+15->ip access-group BROWSING out.
